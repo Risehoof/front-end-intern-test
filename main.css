@@ -5,8 +5,76 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url("assets/04-BG.png");
+}
+
 h1 {
+	margin: 75px auto 20px;
+	width: 450px;
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    color: purple;
+    color: #e3edcd;
+    text-align: center;
 }
+
+/*--------------Alinhamento dos elementos do Form--------------*/
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+.Logo{
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	background-color: #acd0b6;
+}
+
+/*--------------Formatação dos campos de texto do Form--------------*/
+.Input{
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	border: 0px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+/*--------------Outline de foco nos campos do Form--------------*/
+input[type=text]:focus, textarea:focus {
+  	box-shadow: 0 0 3pt 2pt #acd0b6;
+}
+
+
+/*--------------Formatação do botão--------------*/
+#botaoEnviar{
+	padding: 15px 0px;
+	margin-bottom: 70px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	background-color: #71a397;
+	cursor: pointer;
+	box-shadow: 0 9px #4a8978;
+	transition: 0.3s;
+}
+
+#botaoEnviar:hover{
+	background-color: #4c8979;
+	box-shadow: 0 9px #3b6d60;
+}
+
+#botaoEnviar:active{
+	background-color: #2ca663;
+  	box-shadow: 0 5px #1d7960;
+  	transform: translateY(4px);
+}
+
